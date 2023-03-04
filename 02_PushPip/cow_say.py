@@ -10,4 +10,4 @@ parser.add_argument("message", action="store", default="", nargs="?")
 params = parser.parse_args()
 print(params)
 if (params.l == True and params.message == ""):
-    print(cowsat.list_cows)
+    print(cowsay.list_cows())

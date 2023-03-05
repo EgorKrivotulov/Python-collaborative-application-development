@@ -13,10 +13,10 @@ class mycmd(cmd.Cmd):
         print(shlex.split(arg))
         print(cowsay.cowsay(shlex.split(arg)[0]))
     def do_list_cows(self, arg):
-        cowsay.list_cows()
+        print(cowsay.list_cows())
     def do_make_bubble(self, arg):
-        pass
+        print(cowsay.make_bubble(shlex.split(arg)[0]))
     def do_cowthink(self, arg):
-        pass
+        print(cowsay.cowthink(shlex.split(arg)[0]))
 if __name__ == "__main__":
     mycmd().cmdloop()
